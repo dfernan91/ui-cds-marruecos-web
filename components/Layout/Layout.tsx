@@ -63,7 +63,7 @@ const mockdata = [
   },
 ];
 
-export function Layout({ children }) {
+export function Layout({ children }: any) {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
   const theme = useMantineTheme();
@@ -410,6 +410,7 @@ export function Layout({ children }) {
           </Group>
         </ScrollArea>
       </Drawer>
+      {children}
     </Box>
   );
 }

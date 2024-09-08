@@ -4,4 +4,4 @@ export default {
   title: 'Welcome',
 };
 
-export const Usage = () => <Layout />;
+export const Usage = () => <Layout></Layout>;
