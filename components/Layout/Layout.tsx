@@ -63,7 +63,11 @@ const mockdata = [
   },
 ];
 
-export function Layout({ children }: any) {
+interface Props {
+  children: any;
+}
+
+export function Layout({ children }: Props) {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
   const theme = useMantineTheme();
@@ -90,7 +94,7 @@ export function Layout({ children }: any) {
     <Box pb={120}>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          <Image w={48} src="./cds_marruecos_logo.jpg" />
+          <Image w={48} src="./cds_marruecos_logo.png" />
 
           <Group h="100%" gap={0} visibleFrom="sm">
             <HoverCard width={600} position="bottom" radius="md" shadow="md" withinPortal>
