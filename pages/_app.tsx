@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
 import { theme } from '../theme';
 import { Layout } from '@/components/Layout/Layout';
+import '@mantine/carousel/styles.css';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

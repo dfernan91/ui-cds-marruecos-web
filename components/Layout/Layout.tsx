@@ -273,7 +273,7 @@ export function Layout({ children }: Props) {
                 </div>
               </HoverCard.Dropdown>
             </HoverCard>
-            <HoverCard width={600} position="bottom" radius="md" shadow="md" withinPortal>
+{/*             <HoverCard width={600} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
                 <a href="#" className={classes.link}>
                   <Center inline>
@@ -360,7 +360,7 @@ export function Layout({ children }: Props) {
                   </Group>
                 </div>
               </HoverCard.Dropdown>
-            </HoverCard>
+            </HoverCard> */}
           </Group>
 
 {/*           <Group visibleFrom="sm">
